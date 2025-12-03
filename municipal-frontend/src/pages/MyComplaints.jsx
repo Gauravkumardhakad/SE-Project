@@ -185,9 +185,9 @@ const ComplaintTable = ({ complaints }) => (
             <td className="p-4">
               <div className="font-medium text-slate-200">{c.title}</div>
               <div className="text-xs text-slate-400">{c.category}</div>
-              <div className="text-xs text-slate-500 mt-1 line-clamp-2">
-                {c.description}
-              </div>
+              <div className="text-xs text-slate-500 mt-1 max-w-[350px] line-clamp-3">
+  {c.description}
+</div>
             </td>
             <td className="p-4 text-slate-300">
               {c.department?.name || "N/A"}

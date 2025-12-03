@@ -380,7 +380,7 @@ const AdminDepartmentManagement = () => {
           </div>
 
           {/* --- Side Panel (Placeholder) --- */}
-          <div className="lg:col-span-1 bg-slate-800/70 border border-slate-700 rounded-xl p-6 h-fit">
+          {/* <div className="lg:col-span-1 bg-slate-800/70 border border-slate-700 rounded-xl p-6 h-fit">
             <div className="flex items-center gap-3 mb-4">
               <BarChart className="text-cyan-400" size={20} />
               <h3 className="text-lg font-semibold text-white">Department Performance</h3>
@@ -388,7 +388,7 @@ const AdminDepartmentManagement = () => {
             <div className="h-64 flex items-center justify-center text-slate-500">
               [ Chart displaying resolved vs. pending complaints by department ]
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
 

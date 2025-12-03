@@ -104,7 +104,7 @@ export default function AdminReports() {
           API.get("/admin/recent-complaints"),
         ]);
 
-        setKpi(kpiRes.data);
+        setKpi(kpiRes.data.stats);
         setComplaintsByDept(deptRes.data);
         setTrend(trendRes.data);
         setRecent(recentRes.data);
@@ -264,7 +264,7 @@ const kpiData = kpi ? [
       </div>
 
       {/* Table Section - Recent Complaint Activity */}
-      <div className="bg-slate-800/50 p-4 sm:p-6 rounded-xl border border-slate-700/50 shadow-lg backdrop-blur-sm">
+      {/* <div className="bg-slate-800/50 p-4 sm:p-6 rounded-xl border border-slate-700/50 shadow-lg backdrop-blur-sm">
         <h3 className="text-xl font-semibold text-white mb-4">Recent Complaint Activity</h3>
         <Table>
           <TableHeader>
@@ -290,7 +290,7 @@ const kpiData = kpi ? [
             ))}
           </TableBody>
         </Table>
-      </div>
+      </div> */}
 
     </div>
   );
